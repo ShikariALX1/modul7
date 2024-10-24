@@ -10,8 +10,8 @@ class WordsFinder:
                 content = file.read().lower()
                 for char in punctuation:
                     content = content.replace(char, ' ')
-                words = content.split()
-                all_words[file_name] = words
+                    words = content.split()
+                    all_words[file_name] = words
             return all_words
 
     def find(self, word):
